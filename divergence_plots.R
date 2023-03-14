@@ -24,6 +24,7 @@ option_list = list(
 opt_parser = OptionParser(option_list=option_list);
 opt = parse_args(opt_parser);
 
+#Loading options into variables
 f_file <- opt$f_stat
 master_file <- opt$master 
 trait1_file <- opt$trait1
@@ -31,11 +32,11 @@ trait2_file <- opt$trait2
 pop_file <- opt$pop_iids
 
 #Ref to local machine for testing 
-f_file <- '~/Desktop/Gini-PGS/f_stat.csv'
-master_file <-'~/Desktop/Gini-PGS/table_PLR_100k_sum_100_zp.txt' 
-trait1_file <- '~/Desktop/Gini-PGS/final/250.1-1KG_PLR.csv'
-trait2_file <- '~/Desktop/Gini-PGS/final/darker_skin0-1KG_PLR.csv'
-pop_file <- '~/Desktop/Gini-PGS/UKB/randomized_pop_iids.csv'
+# f_file <- '~/Desktop/Gini-PGS/f_stat.csv'
+# master_file <-'~/Desktop/Gini-PGS/table_PLR_100k_sum_100_zp.txt' 
+# trait1_file <- '~/Desktop/Gini-PGS/final/250.1-1KG_PLR.csv'
+# trait2_file <- '~/Desktop/Gini-PGS/final/darker_skin0-1KG_PLR.csv'
+# pop_file <- '~/Desktop/Gini-PGS/UKB/randomized_pop_iids.csv'
 
 #Loading CSV containing f_stat for each trait
 f_df <- import(f_file)
